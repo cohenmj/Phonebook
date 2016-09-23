@@ -73,11 +73,11 @@ int main()
 }
 
 void duplicateCheck(char book[MAXENTRIES][MAXFIELDS][MAXSIZE]) //Function to Check Duplicates 
-{
+{							//Jake Happersett helped me create this check 
 	for (int a = -1; a < i - 1; a++)
 	{
 		if ((strcmp(book[a][0], book[i - 1][0]) == 0) && (i - 1 != 0)) //Will compare current list (output will be 0 if true) and making sure the count variable does not equal 0
-		{																//Jake Happersett helped me create this check
+		{					
 
 			cout << "Please Enter a Valid Entry Next Time! Hit Enter to Continue" << endl;
 			i--;
